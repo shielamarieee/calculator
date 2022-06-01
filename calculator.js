@@ -56,6 +56,10 @@ const deleteBtn = document.querySelector('#delete');
  //Event on Operator Buttons
  operatorBtn.forEach((operator) => {
    operator.addEventListener('click', () => {
+     //to string together several operations and still get the answer
+     if(firstNumber && storedNumber) {
+       calculate();
+     }
      //store the first number
      firstNumber = storedNumber;
      clickedOperator = operator.textContent;
