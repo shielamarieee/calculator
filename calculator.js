@@ -85,6 +85,8 @@ const deleteBtn = document.querySelector('#delete');
      clickedOperator = operator.textContent;
      //display previous num and clicked operator at the upper part of screen
      previousNum.textContent = `${storedNumber} ${clickedOperator}`;
+     //to not over-flow screen
+     previousNum.style.wordWrap = 'hidden';
      //reset the number to allow to type-in for the second operand
      storedNumber = '';
      console.log('storedNumber = ' + storedNumber);
