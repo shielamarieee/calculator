@@ -44,3 +44,10 @@ const deleteBtn = document.querySelector('#delete');
  let result = '';
  let roundedResult = '';
  currentNum.textContent = 0;
+
+ //Event on Number Buttons
+ numberBtn.forEach((number) => {
+   number.addEventListener('click', () => {
+
+   })
+ });
