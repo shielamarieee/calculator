@@ -68,6 +68,8 @@ const deleteBtn = document.querySelector('#delete');
  //Event on Operator Buttons
  operatorBtn.forEach((operator) => {
    operator.addEventListener('click', () => {
+     //reenable disabled button when an operator is clicked
+     decimalBtn.disabled = false;
      //to string together several operations and still get the answer
      if(firstNumber && storedNumber) {
        calculate();
