@@ -61,9 +61,13 @@ const deleteBtn = document.querySelector('#delete');
      clickedOperator = operator.textContent;
      //display previous num and clicked operator at the upper part of screen
      previousNum.textContent = `${storedNumber} ${clickedOperator}`;
+     //reset the number to allow to type-in for the second operand
      storedNumber = '';
      console.log('storedNumber = ' + storedNumber);
      console.log('result = ' + result);
      console.log('firstNumber = ' + firstNumber);
    })
  });
+
+ //Event on Equals Button
+ equalsBtn.addEventListener('click', calculate);
