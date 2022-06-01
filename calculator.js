@@ -59,5 +59,11 @@ const deleteBtn = document.querySelector('#delete');
      //store the first number
      firstNumber = storedNumber;
      clickedOperator = operator.textContent;
+     //display previous num and clicked operator at the upper part of screen
+     previousNum.textContent = `${storedNumber} ${clickedOperator}`;
+     storedNumber = '';
+     console.log('storedNumber = ' + storedNumber);
+     console.log('result = ' + result);
+     console.log('firstNumber = ' + firstNumber);
    })
  });
