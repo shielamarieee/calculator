@@ -129,6 +129,11 @@ const deleteBtn = document.querySelector('#delete');
     previousNum.textContent = `${firstNumber} ${clickedOperator} ${storedNumber}`;
     storedNumber = roundedResult;
     cantDivideByZero();
+    if(roundedResult === 'Infinity') {
+      return;
+    } else {
+      firstNumber = '';
+    }
  }
 
  //To Alert User not to Divide a Number By Zero
