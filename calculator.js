@@ -52,3 +52,10 @@ const deleteBtn = document.querySelector('#delete');
     currentNum.textContent = storedNumber;
    })
  });
+
+ //Event on Operator Buttons
+ operatorBtn.forEach((operator) => {
+   operator.addEventListener('click', () => {
+
+   })
+ });
