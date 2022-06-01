@@ -104,6 +104,15 @@ const deleteBtn = document.querySelector('#delete');
  //Event on Delete Button
  deleteBtn.addEventListener('click', deleteNumber);
 
+ //To Erase
+ function deleteNumber() {
+  const toArray = storedNumber.split('');
+  const toRemove = toArray.pop();
+  const returnString = toArray.join('');
+  storedNumber = returnString;
+  currentNum.textContent = storedNumber;
+ }
+
  //To Calculate
  function calculate() {
     //for the equal button to not work when the user didn't type-in for another operand
