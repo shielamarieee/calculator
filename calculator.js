@@ -78,6 +78,11 @@ const deleteBtn = document.querySelector('#delete');
 
  //To Calculate
  function calculate() {
+  //for the equal button to not work when the user didn't type-in for another operand
+  if(!storedNumber || !firstNumber) {
+    alert('Please type in operand');
+    return;
+  }
   result = operate(clickedOperator, parseFloat(firstNumber), parseFloat(storedNumber));
   //round off numbers to 3 decimal; converted to string for the split() method works; limit teh result to 21 numbers to nto overflow screen;
   roundedResult = Number(result.toFixed(3)).toString().substring(0, 21);
