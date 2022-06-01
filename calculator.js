@@ -36,3 +36,11 @@ const decimalBtn = document.querySelector('#decimal');
 const equalsBtn = document.querySelector('#equals');
 const clearBtn = document.querySelector('#clear');
 const deleteBtn = document.querySelector('#delete');
+
+ //Global Variables
+ let storedNumber = '';
+ let clickedOperator = '';
+ let firstNumber = '';
+ let result = '';
+ let roundedResult = '';
+ currentNum.textContent = 0;
