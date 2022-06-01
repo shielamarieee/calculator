@@ -71,3 +71,8 @@ const deleteBtn = document.querySelector('#delete');
 
  //Event on Equals Button
  equalsBtn.addEventListener('click', calculate);
+
+ //To Calculate
+ function calculate() {
+  result = operate(clickedOperator, parseFloat(firstNumber), parseFloat(storedNumber));
+ }
