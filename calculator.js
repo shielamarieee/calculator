@@ -102,5 +102,8 @@ const deleteBtn = document.querySelector('#delete');
     alert('Sorry, You can\'t divide by 0');
     currentNum.textContent = 0;
     previousNum.textContent = `${firstNumber} ${clickedOperator}`;
+    //makes the first operand as zero once the user clicked a different operator.
+    result = 0;
+    storedNumber = 0;
   }
 }
