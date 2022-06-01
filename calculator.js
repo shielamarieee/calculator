@@ -49,6 +49,11 @@ const deleteBtn = document.querySelector('#delete');
  numberBtn.forEach((number) => {
    number.addEventListener('click', () => {
     storedNumber += number.textContent;
+    //if display exceed
+    if(storedNumber.length >= 22) {
+      alert('You can\'t add more numbers, you have exceeded the allowed numbers to be displayed on screen');
+      storedNumber = storedNumber.substring(0, 21);
+    }
     currentNum.textContent = storedNumber;
    })
  });
