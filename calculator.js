@@ -26,3 +26,13 @@ function operate(operator, num1, num2) {
     return divide(num1, num2);
   }
 }
+
+//DOM Elements
+const previousNum = document.querySelector('.previous-number');
+const currentNum = document.querySelector('.current-number');
+const numberBtn = document.querySelectorAll('.number');
+const operatorBtn = document.querySelectorAll('.operator');
+const decimalBtn = document.querySelector('#decimal');
+const equalsBtn = document.querySelector('#equals');
+const clearBtn = document.querySelector('#clear');
+const deleteBtn = document.querySelector('#delete');
