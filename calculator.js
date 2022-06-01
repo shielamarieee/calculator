@@ -54,6 +54,12 @@ const deleteBtn = document.querySelector('#delete');
       alert('You can\'t add more numbers, you have exceeded the allowed numbers to be displayed on screen');
       storedNumber = storedNumber.substring(0, 21);
     }
+    //add default 0 if the first input is decimal point;
+    if(storedNumber.startsWith('.')) {
+      storedNumber = '0' + storedNumber;
+      console.log('starts with decimal');
+    }
+    //display clicked numebr button on screen
     currentNum.textContent = storedNumber;
     //limit decimal to 1;
     if(storedNumber.includes('.')) {
