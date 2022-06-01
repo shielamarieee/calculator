@@ -101,6 +101,9 @@ const deleteBtn = document.querySelector('#delete');
    window.location.reload();
  });
 
+ //Event on Delete Button
+ deleteBtn.addEventListener('click', deleteNumber);
+
  //To Calculate
  function calculate() {
     //for the equal button to not work when the user didn't type-in for another operand
