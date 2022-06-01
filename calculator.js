@@ -58,5 +58,6 @@ const deleteBtn = document.querySelector('#delete');
    operator.addEventListener('click', () => {
      //store the first number
      firstNumber = storedNumber;
+     clickedOperator = operator.textContent;
    })
  });
