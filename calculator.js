@@ -95,3 +95,12 @@ const deleteBtn = document.querySelector('#delete');
   previousNum.textContent = `${firstNumber} ${clickedOperator} ${storedNumber}`;
   storedNumber = roundedResult;
  }
+
+ //To Alert User not to Divide a Number By Zero
+ function cantDivideByZero() {
+  if(roundedResult === 'Infinity') {
+    alert('Sorry, You can\'t divide by 0');
+    currentNum.textContent = 0;
+    previousNum.textContent = `${firstNumber} ${clickedOperator}`;
+  }
+}
