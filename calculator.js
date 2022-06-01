@@ -76,6 +76,11 @@ const deleteBtn = document.querySelector('#delete');
  //Event on Equals Button
  equalsBtn.addEventListener('click', calculate);
 
+ //Event on Clear Button 
+ clearBtn.addEventListener('click', () => {
+   window.location.reload();
+ });
+
  //To Calculate
  function calculate() {
   //for the equal button to not work when the user didn't type-in for another operand
