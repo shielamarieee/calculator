@@ -56,6 +56,7 @@ const deleteBtn = document.querySelector('#delete');
  //Event on Operator Buttons
  operatorBtn.forEach((operator) => {
    operator.addEventListener('click', () => {
-
+     //store the first number
+     firstNumber = storedNumber;
    })
  });
