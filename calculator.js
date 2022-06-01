@@ -48,6 +48,7 @@ const deleteBtn = document.querySelector('#delete');
  //Event on Number Buttons
  numberBtn.forEach((number) => {
    number.addEventListener('click', () => {
-
+    storedNumber += number.textContent;
+    currentNum.textContent = storedNumber;
    })
  });
