@@ -55,6 +55,13 @@ const deleteBtn = document.querySelector('#delete');
       storedNumber = storedNumber.substring(0, 21);
     }
     currentNum.textContent = storedNumber;
+    //limit decimal to 1;
+    if(storedNumber.includes('.')) {
+      console.log('contains decimal');
+      decimalBtn.disabled = true;
+    } else {
+      decimalBtn.disabled = false;
+    }
    })
  });
 
